@@ -1,10 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "ml_tank",
-"dataUrl": "MLtank.data.unityweb",
-"asmCodeUrl": "MLtank.asm.code.unityweb",
-"asmMemoryUrl": "MLtank.asm.memory.unityweb",
-"asmFrameworkUrl": "MLtank.asm.framework.unityweb",
+"dataUrl": "MLTank.data.unityweb",
+"wasmCodeUrl": "MLTank.wasm.code.unityweb",
+"wasmFrameworkUrl": "MLTank.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},

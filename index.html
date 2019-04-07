@@ -3,13 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ml_tank</title>
+    <title>基于遗传算法优化的神经网络坦克</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/MLtank.json");
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/MLTank.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
-    <div id="gameContainer" style="width: 800px; height: 600px; margin: auto"></div>
+  <body style="text-align: center;">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 800px; height: 600px"></div>
+      <div class="footer">
+        <!-- <div class="webgl-logo"></div> -->
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">基于遗传算法优化的神经网络坦克,根据菠菜大佬的游戏发布的。<a href="https://www.cnblogs.com/pojdd/p/9801400.html">我的博客</a>神经网络坦克</div>
+      </div>
+    </div>
   </body>
 </html>
